@@ -1,7 +1,7 @@
 function loadEvent(){
     load=document.getElementById('image');
     console.log("Loaded default image")
-    load.style.backgroundImage="url('imgs/Polaroid camera.jpg')";
+    load.style.backgroundImage="url('https://i.ibb.co/HTbWPVGr/Polaroid-camera.jpg')";
 
     imgpreviews=document.querySelectorAll('img')
     for (var i=0; i < imgpreviews.length; i++) {
@@ -19,7 +19,7 @@ function upDate(previewPic){
 
 function unDo(){
     clear=document.getElementById('image');
-    console.log("Blank")
+    console.log("Reverted background image to blank")
     clear.style.backgroundImage="url('')";
     console.log("Reverted innerHTML text to default")
     clear.innerHTML="Hover over an image below to display here.";
