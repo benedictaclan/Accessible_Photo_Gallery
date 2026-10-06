@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
+</head>
+
+<body onload="loadEvent()">
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <img class="preview" alt="Aerial City View" src="imgs/Aerial view.jpg" 
+    onmouseover="upDate(this)" onmouseout="document.getElemenetById('image').innerHTML"
+    onfocus=imgfocus()" onblur="imgblur()">
+
+    <img class="preview" alt="Crossing the Bridge" src="imgs/Crossing.jpg" 
+    onmouseover="upDate(this)" onmouseout="unDo()"
+    onfocus=imgfocus()" onblur="imgblur()">
+    
+    <img class="preview" alt="Under the Shade of a Big Tree" src="imgs/Under the shade.jpg" 
+    onmouseover="upDate(this)" onmouseout="unDo()"
+    onfocus=imgfocus()" onblur="imgblur()">
+
+    <img class="preview" alt="Warm Stairwell" src="imgs/Warm stairwell.jpg" 
+    onmouseover="upDate(this)" onmouseout="unDo()"
+    onfocus=imgfocus()" onblur="imgblur()">
+
+    <img class="preview" alt="Food for Thought" src="imgs/Food for thought.jpg" 
+    onmouseover="upDate(this)" onmouseout="unDo()"
+    onfocus=imgfocus()" onblur="imgblur()">
+    
+    <img class="preview" alt="After the Rain Pours" src="imgs/After the rain pours.jpg" 
+    onmouseover="upDate(this)" onmouseout="unDo()"
+    onfocus=imgfocus()" onblur="imgblur()">
+
+</body>
+</html>
